@@ -1,31 +1,259 @@
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-<style>
-a:link, a:visited{text-decoration: none;color: green}
-</style>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-<title>Můj výběr mp3</title>
-<link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informace o hudebních skupinách</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 230px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #ddd;
+            cursor: pointer;
+            border-radius: 4px;
+            color: green;
+        }
+        li:hover {
+            background-color: #ccc;
+        }
+        .group-info {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h4 {
+            font-family: Monospace;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+        a:link {
+               color:green;
+               background-color: #ddd;
+               text-decoration: none;
+               font-size: 150%
+        }
+        a:hover {
+               color:red;
+               background-color: #ccc;
+               text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <div class="sidebar">
+        <ul>
+            <li onclick="showInfo('akb')">AKB48</li>
+            <li onclick="showInfo('blackpink')">BLACKPINK</li>
+            <li onclick="showInfo('dreamcatcher')">Dreamcatcher</li>
+            <li onclick="showInfo('lisa')">LiSA</li>
+            <li onclick="showInfo('tsfh')">Two Steps From Hell</li>
+        </ul>
+    </div>
 
+    <div class="content">
+        <div id="akb" class="group-info">
+            <h2>AKB48</h2>
+            <img src="obrazky/akb48.jpeg" alt="Skupina AKB48">
+            <p>AKB48 je japonská idolová skupina pojmenovaná po čtvrti Akihabara v Tokiu. Skupina má unikátní koncept "divadelních idolů", vystupuje téměř denně ve svém vlastním divadle v Akihabaře.</p>
+            <p>Založená v roce 2005, AKB48 je jednou z nejvýdělečnějších hudebních skupin v Japonsku a dala vzniknout mnoha sesterským skupinám po celé Asii.</p>
+            <p><a href="https://mega.nz/file/Rz8H1R5J#6tbxett31QDPWxEJsfnoboFrO2MHSIkJ5F0FdtSMHss" target="_blank">Stahuj mp3</a> v zip souboru z úložiště na www.mega.nz
+         <p>Seznam skladeb:
+         <h4>
+         <p>Aitakatta.mp3
+         <p>Beginner.mp3
+         <p>Heavy Rotation.mp3
+         <p>Majisuka Rock n' Roll.mp3
+         <p>Ponytail to Shushu.mp3
+         <p>RIVER.mp3
+         <p>Sakura no Hanabiratachi 2008.mp3
+         <p>Sakura no Ki ni Narou.mp3
+         <p>Sakura no shiori.mp3
+         <p>Sakurairo no Sora no Shitade.mp3
+         <p>Sayonara Crawl.mp3
+         <p>Seishun to Kizukanai mama.mp3
+         <p>UZA.mp3
+         <p>Yasai Sisters.mp3
+         <p>Yoyaku shita Christmas.mp3
+         <p>Yuuhi wo Miteiru ka.mp3
+         </h4>
+        </div>
 
-<br>
-<a href="https://musicbrainz.org/artist/be547bca-8718-4762-bf1b-34a3bdb4938f" target="_blank">AKB48  |</a>
-<a href="https://mega.nz/file/Rz8H1R5J#6tbxett31QDPWxEJsfnoboFrO2MHSIkJ5F0FdtSMHss" target="_blank">mp3 |</a>
-<br>
-<a href="https://musicbrainz.org/artist/85d76093-9865-4605-97fa-8c910929d366" target="_blank">Lisa  |</a>
-<a href="https://mega.nz/file/N7UG1RjR#2zeiWdNxv9ARmy44nJTiL7rHZyxc4tIsO7xeWEubk04" target="_blank">mp3 |</a>
-<br>
-<a href="https://musicbrainz.org/artist/48646387-1664-4c9a-9139-9bfd091b823c" target="_blank">Blackpink  |</a>
-<a href="https://mega.nz/file/RnlgDApT#Pma5Q_nZF8Zv5LQrC1145E2pPiJEy0-PMTpdrx_plzY" target="_blank">mp3 |</a>
-<br>
-<a href="https://musicbrainz.org/artist/a97f393a-13a7-4645-8bba-f10bd22d7228" target="_blank">Dreamcatcher  |</a>
-<a href="https://mega.nz/file/w7dRDI4L#4lDsEW2saJDmStmvbUUZaRnqbTK_zjAAxYg_CpX-J3E" target="_blank">mp3 |</a>
-<br>
-<a href="https://musicbrainz.org/artist/da02dddc-60fa-4ca4-88bb-8012598f1f86" target="_blank">Two Steps From Hell |</a>
-<a href="https://mega.nz/file/F60hharC#R4qhJerjePiPvPjl8OoH7a0upT5ksQ18lHq_XX1JVsI" target="_blank">mp3 |</a>
-<br>
+        <div id="blackpink" class="group-info">
+            <h2>BLACKPINK</h2>
+            <img src="obrazky/blackpink.jpg" alt="Skupina BLACKPINK">
+            <p>BLACKPINK je jihokorejská dívčí skupina založená společností YG Entertainment, skládající se z členek Jisoo, Jennie, Rosé a Lisa.</p>
+            <p>Skupina debutovala v roce 2016 a stala se jednou z nejpopulárnějších K-popových skupin na světě, známá hity jako "DDU-DU DDU-DU", "Kill This Love" a "How You Like That".</p>
+        <p><a href="https://mega.nz/file/RnlgDApT#Pma5Q_nZF8Zv5LQrC1145E2pPiJEy0-PMTpdrx_plzY" target="_blank">Stahuj mp3</a> v zip souboru z úložiště na www.mega.nz
+         <p>Seznam skladeb:
+         <h4>
+         <p>BLACKPINK - AS IF ITS YOUR LAST.mp3
+         <p>BLACKPINK - BOOMBAYAH.mp3
+         <p>BLACKPINK - Dont Know What To Do.mp3
+         <p>BLACKPINK - DUDUDU.mp3
+         <p>BLACKPINK - How You Like That.mp3
+         <p>BLACKPINK - Kill This Love.mp3
+         <p>BLACKPINK - Pink Venom.mp3
+         <p>BLACKPINK - PLAYING WITH FIRE.mp3
+         <p>BLACKPINK - WHISTLE.mp3
+         </h4>
 
+        </div>
+
+        <div id="dreamcatcher" class="group-info">
+            <h2>Dreamcatcher</h2>
+            <img src="obrazky/dreamcatcher.jpg" alt="Skupina Dreamcatcher">
+            <p>Dreamcatcher je jihokorejská dívčí skupina pod společností Happy Face Entertainment. Skupina kombinuje rockové/metalové prvky s K-popem, čímž vytváří unikátní zvuk v tomto žánru.</p>
+            <p>Původně debutovaly jako MINX v roce 2014, v roce 2017 se přejmenovaly na Dreamcatcher s temnějším, více filmovým konceptem.</p>
+            <p><a href="https://mega.nz/file/w7dRDI4L#4lDsEW2saJDmStmvbUUZaRnqbTK_zjAAxYg_CpX-J3E" target="_blank">Stahuj mp3</a> v zip souboru z úložiště na www.mega.nz
+         <p>Seznam skladeb:
+         <h4>
+         <p>BEcause.mp3
+         <p>Black Or White.mp3
+         <p>BOCA.mp3
+         <p>Break The Wall.mp3
+         <p>Chase Me.mp3
+         <p>Deja Vu.mp3
+         <p>Diamond.mp3
+         <p>Faded.mp3
+         <p>Fairytale.mp3
+         <p>Good night.mp3
+         <p>Jazz Bar.mp3
+         <p>July 7th.mp3
+         <p>JUSTICE.mp3
+         <p>Maison.mp3
+         <p>Odd Eye.mp3
+         <p>PIRI.mp3
+         <p>Red Sun.mp3
+         <p>Sahara.mp3
+         <p>Scream.mp3
+         <p>Starlight.mp3
+         <p>Vision.mp3
+         <p>Wake up.mp3
+         <p>Wind Blows.mp3
+         <p>Wonderland.mp3
+         <p>You and I.mp3
+         </h4>
+
+        </div>
+
+        <div id="lisa" class="group-info">
+            <h2>LiSA (japonsky: リサ)</h2>
+            <img src="obrazky/Lisa.png" alt="Japonská zpěvačka LiSA">
+            <p>LiSA (vlastním jménem Risa Oribe, narozená 24. června 1987) je japonská zpěvačka a skladatelka z města Seki v prefektuře Gifu.</p>
+            <p>Proslavila se především díky písním pro anime seriály jako Sword Art Online a Demon Slayer: Kimetsu no Yaiba. Její umělecké jméno znamená "Love is Same All" (Láska je všude stejná).</p>
+            <p>LiSA je známá svým silným hlasem a energickými vystoupeními, mezi její hity patří "Gurenge", "Crossing Field" a "Homura".</p>
+            <p><a href="https://mega.nz/file/N7UG1RjR#2zeiWdNxv9ARmy44nJTiL7rHZyxc4tIsO7xeWEubk04" target="_blank">Stahuj mp3</a> v zip souboru z úložiště na www.mega.nz
+         <p>Seznam skladeb:
+         <h4>
+         <p>Lisa - ADAMAS.mp3
+         <p>Lisa - Catch the Moment.mp3
+         <p>Lisa - Crossing Field.mp3
+         <p>Lisa - Datte Atashino Hero.mp3
+         <p>Lisa - Gurenge.mp3
+         <p>Lisa - Homura.mp3
+         <p>Lisa - Leopardess.mp3
+         <p>Lisa - Lost Romance.mp3
+         <p>Lisa - My Friends Forever.mp3
+         <p>Lisa - No More Time Machine.mp3
+         <p>Lisa - Oath Sign.mp3
+         </h4>
+        </div>
+
+        <div id="tsfh" class="group-info">
+            <h2>Two Steps From Hell</h2>
+            <img src="obrazky/2sfh.jpg" alt="Logo Two Steps From Hell">
+            <p>Two Steps From Hell je americká produkční společnost založená Thomasem Bergersenem a Nickem Phoenixem, specializující se na hudbu pro filmové trailery.</p>
+            <p>Jsou známí svými epickými, filmovými kompozicemi, jejichž hudba byla použita v nespočtu filmových trailerů, televizních spotů a videoher.</p>
+            <p><a href="https://mega.nz/file/F60hharC#R4qhJerjePiPvPjl8OoH7a0upT5ksQ18lHq_XX1JVsI" target="_blank">Stahuj mp3</a> v zip souboru z úložiště na www.mega.nz
+         <p>Seznam skladeb:
+         <h4>
+         <p>01. Heart of Courage.mp3
+         <p>02. Protectors of the Earth.mp3
+         <p>03. Blackheart.mp3
+         <p>04. To Glory.mp3
+         <p>05. Archangel.mp3
+         <p>06. Dragon Rider.mp3
+         <p>07. Victory.mp3
+         <p>08. Strength of a Thousand Men.mp3
+         <p>09. Winterspell.mp3
+         <p>10. For the Win.mp3
+         <p>11. Fall of the Fountain World.mp3
+         <p>12. El Dorado.mp3
+         <p>13. Freedom Fighters.mp3
+         <p>14. Impossible.mp3
+         <p>15. Norwegian Pirate.mp3
+         <p>16. Star Sky.mp3
+         <p>17. Never Back Down.mp3
+         <p>18. Flight of the Silverbird.mp3
+         <p>19. Never Give up on Your Dreams.mp3
+         <p>20. Empire of Angels.mp3
+         <p>21. After the Fall.mp3
+         <p>22. Cannon In D Minor.mp3
+         <p>23. Vanquish (feat. Felicia).mp3
+         <p>24. Enchantress.mp3
+         <p>25. His Brightest Star Was You.mp3
+         <p>26. The Ring of Winter.mp3
+         <p>27. Unbreakable.mp3
+         <p>28. One Above All.mp3
+         <p>29. Infinite legends.mp3
+         <p>30. Hercules.mp3
+         <p>31. Dragonborn.mp3
+         <p>32. Away With Your Fairies.mp3
+         </h4>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(groupId) {
+            // Skryje všechny informační sekce
+            const allInfos = document.querySelectorAll('.group-info');
+            allInfos.forEach(info => {
+                info.classList.remove('active');
+            });
+
+            // Zobrazí vybranou sekci
+            const selectedInfo = document.getElementById(groupId);
+            selectedInfo.classList.add('active');
+        }
+
+        // Při načtení stránky zobrazí první položku (AKB48)
+        window.onload = function() {
+            showInfo('akb');
+        };
+    </script>
 </body>
 </html>
